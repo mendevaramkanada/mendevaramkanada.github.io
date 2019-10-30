@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>IYUL-2019</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+</style>
+</head>
+<body>
+<center><h2>İYUL AYI ÜÇÜN TOPLANAN VƏSAİT</h2></center>
+
+  <table id="table" border="1" width=100%>
+    <tr><th>#</th><th>Adı</th><th>Məbləğ(CAD)</th></tr>
+	<tr><td>1</td><td>Doktor</td><td>100</td></tr>
+    <tr><td>2</td><td>E....n</td><td>20</td></tr>   
+    <tr><td>3</td><td>V.....  Ə.</td><td>20</td></tr> 
+    <tr><td>4</td><td>A....a x.</td><td>25</td></tr>  
+    <tr><td>5</td><td>S....c x.</td><td>20</td></tr> 
+    <tr><td>6</td><td>G....ə x.</td><td>20</td></tr>   
+	<tr><td>7</td><td>Ağa....q</td><td>20</td></tr>
+    <tr><td>8</td><td>F....l</td><td>20</td></tr>
+	<tr><td>9</td><td>F....d</td><td>20</td></tr>
+	<tr><td>10</td><td>O....n</td><td>20</td></tr>
+	<tr><td>11</td><td>F....d</td><td>20</td></tr>
+	<tr><td>12</td><td>A....r V.</td><td>50</td></tr>
+	<tr><td>13</td><td>E....n Q.</td><td>25</td></tr>
+	<tr><td>14</td><td>D.....d</td><td>30</td></tr>
+	<tr><td>15</td><td>V....r</td><td>60</td></tr>
+	<tr><td>16</td><td>N.....i</td><td>20</td></tr>
+	<tr><td>17</td><td>R....n</td><td>40</td></tr>
+	<tr><td>18</td><td>N....t</td><td>60</td></tr>
+	<tr><td>19</td><td>M....ə x.</td><td>20</td></tr>
+	<tr><td>20</td><td>Qoca</td><td>50</td></tr>
+	<tr><td>21</td><td>S...b</td><td>20</td></tr>
+	<tr><td>22</td><td>T....r</td><td>50</td></tr>
+	<tr><td>23</td><td>E....n Ə.</td><td>20</td></tr>
+	<tr><td>24</td><td>F....ə x.</td><td>20</td></tr>
+	<tr><td>25</td><td>M....i x.</td><td>20</td></tr>
+	<tr><td>26</td><td>S....r</td><td>20</td></tr>
+ </table>
+ 
+  <span id="val"></span>
+		<script>        
+            var table = document.getElementById("table"), sumVal = 0;
+            
+            for(var i = 1; i < table.rows.length; i++)
+            {
+                sumVal = sumVal + parseInt(table.rows[i].cells[2].innerHTML);
+            }
+            
+            document.getElementById("val").innerHTML = "CƏMİ = " + sumVal+" "+"CAD";
+            console.log(sumVal);
+            
+		</script>
+</br>
+</br>
+</br>
+  <img src="../img/hes/july.jpeg" style='width:100%;'style="margin:20px 20px" alt="">
+  <img src="../img/hes/july1.jpeg" style='width:100%;'style="margin:20px 20px" alt="">
+  <img src="../img/hes/july2.jpeg" style='width:100%;'style="margin:20px 20px" alt="">
+  <img src="../img/hes/july3.jpeg" style='width:100%;'style="margin:20px 20px" alt="">
+  <img src="../img/hes/july4.jpeg" style='width:100%;'style="margin:20px 20px" alt="">
+  <img src="../img/hes/july5.jpeg" style='width:100%;'style="margin:20px 20px" alt="">
+</div>
+
+</body>
+</html>
